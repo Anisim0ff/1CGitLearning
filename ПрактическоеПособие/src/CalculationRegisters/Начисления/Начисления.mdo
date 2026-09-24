@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f247f7f-ad81-408c-9564-36348a542824">
+  <producedTypes>
+    <selectionType typeId="b48f6518-4d89-4436-a8be-a0f0cccccd70" valueTypeId="f07aeb05-bd8c-44d1-a579-f3e4b8c187a1"/>
+    <listType typeId="12fbd23f-4866-4ee7-ae54-4a0b0d4d6db7" valueTypeId="725ade79-0a43-4bdc-b3d3-608db3ff4062"/>
+    <managerType typeId="2278adf2-bfc7-4908-aa9b-f28632470851" valueTypeId="63ca3453-da8a-4ed9-9ae3-746217fdb9a3"/>
+    <recordSetType typeId="ca33f700-5cb3-4a83-b522-1af768fb958e" valueTypeId="6b7584b0-9554-4b8a-a11b-80c1a49fe500"/>
+    <recordKeyType typeId="202ce2f7-8698-4f1a-980d-b0004b951cfa" valueTypeId="9e24f643-14a7-4ad4-b2a8-8a829c10b539"/>
+    <recordType typeId="2dbde0e9-9606-4d2c-9db8-a4b509d8c961" valueTypeId="694f87db-e1af-461a-9112-cb315fdbaf75"/>
+    <recalcsType typeId="607e6327-012b-44dc-9f42-3c2eb15736da" valueTypeId="e554eb40-0863-42f7-8ebc-f8b3f769aaa2"/>
+  </producedTypes>
+  <name>Начисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.ГрафикРаботы</schedule>
+  <scheduleValue>InformationRegister.ГрафикРаботы.Resource.Значение</scheduleValue>
+  <scheduleDate>InformationRegister.ГрафикРаботы.Dimension.Дата</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Движения в регистре начисления</value>
+  </extendedListPresentation>
+  <resources uuid="43ae47c9-81bd-4d51-9fe1-eac5bc92c104">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="d3ef17d9-2da9-4127-9aa0-bd278648b9ef">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <scheduleLink>InformationRegister.ГрафикРаботы.Dimension.ГрафикРаботы</scheduleLink>
+  </attributes>
+  <attributes uuid="136c5a4d-8bb4-488d-8efc-2f694ca82167">
+    <name>ИсходныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходные данные</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="7fb87d27-0fd5-4707-a837-a65af5c789c0">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <baseDimension>true</baseDimension>
+  </dimensions>
+  <recalculations uuid="571b12f5-911c-4073-8882-252c57d09da9">
+    <producedTypes>
+      <recordType typeId="86ba610b-ebf5-407b-9a07-ce31e76206cd" valueTypeId="0479f06a-118a-443e-9da7-5773f2f2f4b2"/>
+      <managerType typeId="6b90e390-5e52-41d0-a531-fc9ff2feb382" valueTypeId="3d0a93a5-f9e2-448b-8d06-47330b202131"/>
+      <recordSetType typeId="0739c487-1a79-4c9e-931a-c46afac3bb30" valueTypeId="7b48ad69-a5ef-4f72-826f-139f8430ecf2"/>
+    </producedTypes>
+    <name>Перерасчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перерасчет</value>
+    </synonym>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <dimensions uuid="d6a99609-619c-4c57-9e2e-69b6138e011a">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <registerDimension>CalculationRegister.Начисления.Dimension.Сотрудник</registerDimension>
+      <leadingRegisterData>CalculationRegister.Начисления.Dimension.Сотрудник</leadingRegisterData>
+    </dimensions>
+  </recalculations>
+</mdclass:CalculationRegister>

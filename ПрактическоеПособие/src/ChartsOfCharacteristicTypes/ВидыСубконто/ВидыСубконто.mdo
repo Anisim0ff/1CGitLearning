@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a489072-b1e1-45e7-a70d-f7e98aabbb93">
+  <producedTypes>
+    <objectType typeId="9b6175e3-971c-4eea-b4eb-dd4ca2d54faa" valueTypeId="67c8c56f-4184-42fc-be2e-8de7ab18499e"/>
+    <refType typeId="65367878-3a2d-4ea3-b457-c6a45fa65ab0" valueTypeId="16191f9f-a388-4c59-a079-33f62e38cee1"/>
+    <selectionType typeId="df87be93-3cf8-4670-a814-033373275938" valueTypeId="f47269ff-8445-4fa5-b783-075e734113b0"/>
+    <listType typeId="7dd81288-cfe5-4ab4-bea8-8244928e7ab3" valueTypeId="2cba58bf-4b23-474f-ae8d-53d8631a0c66"/>
+    <managerType typeId="8395da21-3034-4e7c-b754-fa14d78c65ed" valueTypeId="0dcad4a4-a22e-4811-b329-35fa7709b222"/>
+    <containerType typeId="356e664b-71ed-42c1-9d98-d85c7c7cb47b" valueTypeId="59added4-731c-4071-b7f2-05477a80c524"/>
+  </producedTypes>
+  <name>ВидыСубконто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды субконто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконто.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконто.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.Субконто</characteristicExtValues>
+  <type>
+    <types>CatalogRef.Клиенты</types>
+    <types>CatalogRef.Субконто</types>
+    <types>CatalogRef.Номенклатура</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1888059e-8869-4057-bc3e-cf9ddb8eed3d">
+      <name>Клиенты</name>
+      <description>Клиенты</description>
+      <code>000000002</code>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+    </items>
+    <items id="a5bb6848-08cf-46b3-a34d-8db3f81da5e3">
+      <name>Материалы</name>
+      <description>Материалы</description>
+      <code>000000001</code>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c0351a2-48ab-4552-8c13-e661608d3358">
+  <producedTypes>
+    <selectionType typeId="4ba6e013-8a35-440f-9ec6-72ba0ff095cf" valueTypeId="24d27070-c315-4070-af46-802db2c607cb"/>
+    <listType typeId="f4ca59d0-fc07-4b22-9864-a8d5af03ff60" valueTypeId="90a9a5f8-1fbd-465a-98e7-1f1ca129d5bd"/>
+    <managerType typeId="491788e6-2b79-4cbb-8c9c-2528be1721ec" valueTypeId="c075d3d5-34ee-4721-a9c4-088965f9de9d"/>
+    <recordSetType typeId="9d8ea25b-ff52-4385-9823-734ef0794292" valueTypeId="b470ecef-8165-418a-b135-421d765c961b"/>
+    <recordKeyType typeId="84a131e5-517b-4d14-b3c5-fe466117da70" valueTypeId="80934fbf-daf0-45b1-8cd4-2f9bdadbf62d"/>
+    <recordType typeId="1e94c6c5-be57-4f3a-a91b-fa7b5bf53149" valueTypeId="0ab96875-e367-42ec-8519-9958412bd7ed"/>
+    <recordManagerType typeId="1e214519-c52e-4f97-9d08-c12f3e1b7abf" valueTypeId="6fa3c46d-0b2b-40fc-9733-adaebb90f566"/>
+  </producedTypes>
+  <name>ГрафикРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>График работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ГрафикРаботы.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="580c7350-61e6-452a-a533-6dbec154d2e2">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f9fda5ab-2f53-4642-a2a0-99b9be432c1a">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="747ad43a-56c9-4587-bc02-cea940b18970">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f334e46c-816a-4506-a297-4fa489e7e2ca">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="684419b4-3610-4119-bc0b-43d5943ceb28">
+    <name>ФормаГрафик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма график</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

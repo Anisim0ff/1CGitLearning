@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cff274e7-3c33-4aea-9bff-0715e0f58da3">
+  <producedTypes>
+    <objectType typeId="1590c275-0d60-46bd-aeea-0e0859bc4547" valueTypeId="264f6c36-915b-4093-9561-d3dc1fca6f10"/>
+    <refType typeId="6336c680-4104-4b47-b832-aa6ba76a475f" valueTypeId="8ac4eba6-d148-46f5-bd5c-6ef5b3dd0ddc"/>
+    <selectionType typeId="26ccd349-3afb-4f43-adbf-ab377375cad2" valueTypeId="3be729b5-26d9-45e9-b4b9-3173d4a0472c"/>
+    <listType typeId="d527c3e2-89ee-4431-8cb4-c4754e66b367" valueTypeId="98ccdfde-926c-41e4-8fd8-331d9c9d8f19"/>
+    <managerType typeId="835d1aa0-19b2-4894-b292-0bdb6404dc42" valueTypeId="b0c2f900-02ca-4e29-8663-dfdaed825640"/>
+  </producedTypes>
+  <name>Субконто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Субконто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Субконто.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Субконто.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>ChartOfCharacteristicTypes.ВидыСубконто</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
