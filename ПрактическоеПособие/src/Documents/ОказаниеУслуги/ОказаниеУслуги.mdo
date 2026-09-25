@@ -101,6 +101,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="1043005e-d606-443c-81ba-8899ce880fcf">
+    <name>Доставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доставка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="760ddc38-0b4e-4ac0-aa8d-4be3db1bf76a">
     <name>ФормаДокумента</name>
     <synonym>
